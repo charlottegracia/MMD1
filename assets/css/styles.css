@@ -1,8 +1,51 @@
 html {
     font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 body {
     margin: 0;
     padding: 0;
+}
+
+/* HEADER */
+
+header {
+    background-color: #191c27;
+}
+
+.logo {
+    padding: 15px 0 15px 20px;
+    width: 300px;
+}
+
+nav {
+    text-align: right;
+    float: right;
+    font-size: 20px;
+}
+
+/* nav ul {
+    
+} */
+
+nav ul li {
+    display: inline-block;
+    margin: 0 30px 0 25px;
+    padding: 0 5px 0 5px;
+}
+
+nav ul li:hover {
+    border-bottom: solid 3px #96192b;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.activePage {
+    border-bottom: solid 3px #96192b;
+    font-weight: bold;
 }
