@@ -1,3 +1,8 @@
+/* 
+background-color: #191c27;
+background-color: #96192b;
+*/
+
 html {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -48,4 +53,67 @@ nav ul li a {
 .activePage {
     border-bottom: solid 3px #96192b;
     font-weight: bold;
+}
+
+/* FOOTER */
+/* grid areas for footer */
+.footerAddress  {grid-area: address;}
+.footerTlf      {grid-area: tlf;}
+.footerSocials  {grid-area: social;}
+.cookie         {grid-area: cookie;}
+
+footer {
+    width: 100%;
+    background-color: #191c27;
+    display: grid;
+    grid-template-columns: 5% 1fr 10% 1fr 5% 1fr;
+    grid-template-rows: 1fr 20px;
+    grid-template-areas: 
+    ". address . tlf . social"
+    "cookie cookie cookie cookie cookie cookie";
+}
+
+.footerAddress  {
+    padding: 25px;
+}
+
+address {
+    padding-left: 20px;
+    font-weight: lighter;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+.footerTlf {
+    line-height: 1;
+    padding: 20px 25px 25px 25px;
+    vertical-align: top;
+}
+
+.footerTlf h4 {
+    font-weight: normal;
+}
+
+.icon {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.footerSocials {
+    text-align: left;
+    line-height: 3.4;
+    padding: 25px;
+}
+
+.cookie {
+    background-color: #96192b;
+    text-align: center;
+}
+
+.cookie a {
+    padding: 0 170px 0 140px;
 }
