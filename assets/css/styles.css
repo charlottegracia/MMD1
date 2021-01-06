@@ -30,10 +30,6 @@ nav {
     font-size: 20px;
 }
 
-/* nav ul {
-    
-} */
-
 nav ul li {
     display: inline-block;
     margin: 0 20px 0 25px;
@@ -53,6 +49,61 @@ nav ul li a {
 .activePage {
     border-bottom: solid 3px #96192b;
     font-weight: bold;
+}
+
+/* FÆLLES STYLING FOR HERO */
+.hero {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    text-align: center;
+    padding: 100px 0 50px 0;
+    text-shadow: 6px 6px 8px #000000;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* BACKGROUND-IMAGES TIL HERO */ 
+/* forside, om os, kontakt os, galleri */
+.forside, .omOs, .kontakt, .galleri {
+    background-image: url("/assets/image/blomsterWeb.jpg");
+}
+
+/* årstider */
+.foraar {
+    background-image: url("/assets/image/menu.png");
+}
+
+.sommer {
+
+}
+
+.efteraar {
+
+}
+
+.vinter {
+
+}
+
+/* SELSKABER */
+.bryllup {
+    background-image: url("/assets/image/selskab_headers.jpg");
+}
+
+.konfirmation {
+
 }
 
 /* FOOTER */
