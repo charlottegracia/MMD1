@@ -118,11 +118,13 @@ nav ul li a {
     font-weight: normal;
 }
 
-.forsideGrid div {
+.forsideGrid a {
     text-align: center;
     padding: 60px;
     font-weight: lighter;
     margin: 7.5px;
+    text-decoration: none;
+    color: white;
 }
 
 /* box colors */
