@@ -232,6 +232,51 @@ footer a {
 
 /* MENU OG SELSKABER */
 
+    /* Menu */
+
+    .baggrund {
+
+        background-image: url("/assets/image/Lunde-Wedding-19052018-627.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hvidBox {
+        width: 60%;
+        height: auto;
+        margin: 55px 20%;
+        display: inline-block;
+        background-color: white;
+        opacity: 85%;
+        color: #191c27;
+        text-align: center;
+    }
+
+    .maaneder, .vaelgMellem {
+        color: #666666;
+        font-weight: normal;
+    }
+
+    .pris {
+        font-size: 22px;
+        font-weight: normal;
+        padding-bottom: 10px;
+        border-bottom: solid 3px #96192b;
+    }
+
+    .menuOverskrift {
+        text-decoration: underline solid 3px #96192b;
+    }
+
+    article {
+        margin: 30px 100px;
+    }
+
+    
+    /* Selskaber */
+
+    
 
 /* OM OS */
 
