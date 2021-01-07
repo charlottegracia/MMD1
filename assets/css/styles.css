@@ -101,29 +101,12 @@ main nav {
 }
 
 /* årstider og selskaber */
-.foraar {
-    background-image: url("/assets/image/menu.png");
-}
-
-.sommer {
-
-}
-
-.efteraar {
-
-}
-
-.vinter {
-
-}
-
-.bryllup {
-    background-image: url("/assets/image/selskab_headers.jpg");
-}
-
-.konfirmation {
-
-}
+.foraar         {background-image: url("/assets/image/menu.png");}
+.sommer         {}
+.efteraar       {}
+.vinter         {}
+.bryllup        {background-image: url("/assets/image/selskab_headers.jpg");}
+.konfirmation   {}
 
 /* FORSIDE */
 .forsideGrid h2 {
@@ -246,3 +229,14 @@ footer a {
 .cookie a {
     padding: 0 170px 0 140px;
 }
+
+/* MENU OG SELSKABER */
+
+
+/* OM OS */
+
+
+/* KONTAKT OS */
+
+
+/* GALLERI */
