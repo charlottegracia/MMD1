@@ -1,6 +1,7 @@
 /* 
 background-color: #191c27;
 background-color: #96192b;
+background-color: #666666;
 */
 
 html {
@@ -30,10 +31,6 @@ nav {
     font-size: 20px;
 }
 
-/* nav ul {
-    
-} */
-
 nav ul li {
     display: inline-block;
     margin: 0 20px 0 25px;
@@ -54,6 +51,114 @@ nav ul li a {
     border-bottom: solid 3px #96192b;
     font-weight: bold;
 }
+
+/* FÆLLES STYLING FOR HERO */
+.hero {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    text-align: center;
+    padding: 100px 0 50px 0;
+    text-shadow: 6px 6px 8px #000000;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* BACKGROUND-IMAGES TIL HERO */ 
+/* forside, om os, kontakt os, galleri */
+.forside, .omOs, .kontakt, .galleri {
+    background-image: url("/assets/image/blomsterWeb.jpg");
+}
+
+/* årstider og selskaber */
+.foraar {
+    background-image: url("/assets/image/menu.png");
+}
+
+.sommer {
+
+}
+
+.efteraar {
+
+}
+
+.vinter {
+
+}
+
+.bryllup {
+    background-image: url("/assets/image/selskab_headers.jpg");
+}
+
+.konfirmation {
+
+}
+
+/* FORSIDE */
+.forsideGrid h2 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.forsideGrid h5 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.forsideGrid a {
+    text-align: center;
+    padding: 60px;
+    font-weight: lighter;
+    margin: 7.5px;
+    text-decoration: none;
+    color: white;
+}
+
+/* box colors */
+.red        { background-color: #96192b;}
+.darkblue   { background-color: #191c27;}
+.grey       { background-color: #666666;}
+.billede1   { background-image: url("/assets/image/forsideBillede1.png");}
+.billede2   { background-image: url("/assets/image/forsideBillede2.png");}
+
+.billede1, .billede2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* forside grid areas */
+.box1 {grid-area: box1;}
+.box2 {grid-area: box2;}
+.box3 {grid-area: box3;}
+.box4 {grid-area: box4;}
+.box5 {grid-area: box5;}
+.box6 {grid-area: box6;}
+.box7 {grid-area: box7;}
+.box8 {grid-area: box8;}
+
+.forsideGrid {
+    margin: 7.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "box1 box2 box3 box4"
+    "box5 box6 box7 box8";
+}
+
 
 /* FOOTER */
 /* grid areas for footer */
