@@ -235,6 +235,59 @@ footer a {
 
 /* OM OS */
 
+/* Om os grid areas */
+.omOsText1 {grid-area: omOsText1;}
+.omOsPic1 {grid-area: omOsPic1;}
+.omOsPic2 {grid-area: .omOsPic2;}
+.omOsText2 {grid-area: omOsText2;}
+
+.omOsGrid {
+    color: #000000;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "omOsText1 omOsPic1"
+    "omOsPic2 omOsText2"
+    "omOsPic2 omOsText2";
+}
+
+
+.omOsText1 {
+    margin: 0;
+    padding: 0;
+}
+
+.omOsTitle1 {
+    margin: 0;
+    padding: 0;
+}
+
+.omOsPic1 {
+    margin: 0;
+    padding: 0;
+    background-image: url("/assets/image/OmOsSnow.jpg");
+}
+
+.omOsPic2 {
+    margin: 0;
+    padding: 0;
+    background-image: url("/assets/image/omOsMest.jpg");
+}
+
+
+.omOsText2 {
+    margin: 0;
+    padding: 0;
+}
+
+.omOsTitle1 {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 /* KONTAKT OS */
 
