@@ -103,11 +103,11 @@ main nav {
 
 /* årstider og selskaber */
 .foraar         {background-image: url("/assets/image/menu.png");}
-.sommer         {}
-.efteraar       {}
-.vinter         {}
+.sommer         {background-image: url("/assets/image/menu.png")}
+.efteraar       {background-image: url("/assets/image/menu.png")}
+.vinter         {background-image: url("/assets/image/menu.png")}
 .bryllup        {background-image: url("/assets/image/selskab_headers.jpg");}
-.konfirmation   {}
+.konfirmation   {background-image: url("/assets/image/selskab_headers.jpg");}
 
 /* FORSIDE */
 .forsideGrid h2 {
