@@ -237,22 +237,23 @@ footer a {
 
 
 /* KONTAKT OS */
-
-.kontakt-gridcontainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-  }
-
-.kontakt-description { grid-area: 1 / 1 / 2 / 3; }
-.map { grid-area: 2 / 1 / 3 / 5; }
-.form{ grid-area: 3 / 1 / 4 / 2; }
-.rules { grid-area: 3 / 2 / 4 / 3; }
+.kontakt-description    { grid-area: kontakt; }
+.map                    { grid-area: map; }
+.form                   { grid-area: form; }
+.rules                  { grid-area: rules;}
 
 .kontaktoplysninger {
     color: #1d2132;
     margin: 0 auto;
     max-width: 870px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10% 30% 60%;
+    grid-gap: 30px;
+    grid-template-areas: 
+    "kontakt kontakt"
+    "map map"
+    "form rules";
 }
 
 .mapouter {
@@ -260,20 +261,20 @@ footer a {
     margin-right: auto;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type=text], input[type=number], select, textarea {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    box-sizing: border-box;
+    margin: 6px 0 16px 0;
+    resize: vertical /* gør text-area højere i stedet for bredere, når brugeren skriver en besked */
 }
 
 .feedback {
-  padding: 30px;
-  max-width: 400px;
-  display: inline-block;
+    padding: 30px;
+    max-width: 400px;
+    display: inline-block;
 }
 
 .contact-form{
@@ -300,7 +301,6 @@ input[type=text], select, textarea {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    
 }
 
 .btn-link-arrow:hover {
