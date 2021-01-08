@@ -12,6 +12,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 /* HEADER */
@@ -259,6 +260,12 @@ footer a {
     font-weight: normal;
 }
 
+.selskabGrey {
+    color: #666666;
+    font-weight: normal;
+    font-size: 16px;
+}
+
 .pris {
     font-size: 22px;
     font-weight: normal;
@@ -317,17 +324,25 @@ footer a {
 .rules                  { grid-area: rules;}
 
 .kontaktoplysninger {
+    padding: 50px 140px 100px 140px;
     color: #1d2132;
-    margin: 0 auto;
-    max-width: 870px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10% 30% 60%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.2fr 0.5fr 1fr;
     grid-gap: 30px;
     grid-template-areas: 
-    "kontakt kontakt"
-    "map map"
-    "form rules";
+    "kontakt kontakt kontakt kontakt kontakt"
+    "map map map map map"
+    "rules rules rules form form";
+}
+
+.kontakt-description p {
+    width: auto;
+}
+
+.map {
+    background-image: url("/assets/image/map.png");
+    background-size: cover;
 }
 
 .mapouter {
@@ -345,14 +360,11 @@ input[type=text], input[type=number], select, textarea {
     resize: vertical /* gør text-area højere i stedet for bredere, når brugeren skriver en besked */
 }
 
-.feedback {
+.contact-form{
+    background-color: #f0f0f0;
     padding: 30px;
     max-width: 400px;
     display: inline-block;
-}
-
-.contact-form{
-    background-color: #f0f0f0;
 }
 
 .btn-send {
@@ -384,6 +396,10 @@ input[type=text], input[type=number], select, textarea {
 
 .rules {
     padding-bottom: 30px;
+}
+
+.rules li {
+    padding-bottom: 15px;
 }
 
 /* GALLERI */
