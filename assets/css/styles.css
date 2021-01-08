@@ -98,16 +98,16 @@ main nav {
 /* BACKGROUND-IMAGES TIL HERO */ 
 /* forside, om os, kontakt os, galleri */
 .forside, .omOs, .kontakt, .galleri {
-    background-image: url("/assets/image/blomsterWeb.jpg");
+    background-image: url("../image/blomsterWeb.jpg");
 }
 
 /* årstider og selskaber */
-.foraar         {background-image: url("/assets/image/menu.png");}
-.sommer         {background-image: url("/assets/image/menu.png")}
-.efteraar       {background-image: url("/assets/image/menu.png")}
-.vinter         {background-image: url("/assets/image/menu.png")}
-.bryllup        {background-image: url("/assets/image/selskab_headers.jpg");}
-.konfirmation   {background-image: url("/assets/image/selskab_headers.jpg");}
+.foraar         {background-image: url("../image/menu.png");}
+.sommer         {background-image: url("../image/menu.png")}
+.efteraar       {background-image: url("../image/menu.png")}
+.vinter         {background-image: url("../image/menu.png")}
+.bryllup        {background-image: url("../image/selskab_headers.jpg");}
+.konfirmation   {background-image: url("../image/selskab_headers.jpg");}
 
 /* FORSIDE */
 .forsideGrid h2 {
@@ -134,8 +134,8 @@ main nav {
 .red        { background-color: #96192b;}
 .darkblue   { background-color: #191c27;}
 .grey       { background-color: #666666;}
-.billede1   { background-image: url("/assets/image/forsideBillede1.png");}
-.billede2   { background-image: url("/assets/image/forsideBillede2.png");}
+.billede1   { background-image: url("../image/forsideBillede1.png");}
+.billede2   { background-image: url("../image/forsideBillede2.png");}
 
 .billede1, .billede2 {
     background-repeat: no-repeat;
@@ -238,7 +238,7 @@ footer a {
 
 /* MENU OG SELSKABER */
 .baggrund {
-    background-image: url("/assets/image/Lunde-Wedding-19052018-627.jpg");
+    background-image: url("../image/Lunde-Wedding-19052018-627.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -314,8 +314,8 @@ footer a {
     background-size: cover;
 }
 
-.omOsPic1 {background-image: url("/assets/image/OmOsSnow.jpg");}
-.omOsPic2 {background-image: url("/assets/image/omOsMest.jpg");}
+.omOsPic1 {background-image: url("../image/OmOsSnow.jpg");}
+.omOsPic2 {background-image: url("../image/omOsMest.jpg");}
 
 /* KONTAKT OS */
 .kontakt-description    { grid-area: kontakt; }
@@ -341,7 +341,7 @@ footer a {
 }
 
 .map {
-    background-image: url("/assets/image/map.png");
+    background-image: url("../image/map.png");
     background-size: cover;
 }
 
