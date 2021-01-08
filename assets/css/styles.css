@@ -238,5 +238,78 @@ footer a {
 
 /* KONTAKT OS */
 
+.kontakt-gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+.kontakt-description { grid-area: 1 / 1 / 2 / 3; }
+.map { grid-area: 2 / 1 / 3 / 5; }
+.form{ grid-area: 3 / 1 / 4 / 2; }
+.rules { grid-area: 3 / 2 / 4 / 3; }
+
+.kontaktoplysninger {
+    color: #1d2132;
+    margin: 0 auto;
+    max-width: 870px;
+}
+
+.mapouter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.feedback {
+  padding: 30px;
+  max-width: 400px;
+  display: inline-block;
+}
+
+.contact-form{
+    background-color: #f0f0f0;
+}
+
+.btn-send {
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-link-arrow {
+    width: 43px;
+    height: 43px;
+    background-color: #191c27;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMi4wMiAyMS4yMSI+PHRpdGxlPmFycm93LXJpZ2h0PC90aXRsZT48ZyBpZD0iMjBhZDEwMzctMGUzYS00ZDI0LTg0ZjEtYjlmZDBlZjkyMTdkIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSI1YjcxOTliYi04M2VlLTRlOGMtOTkzZC1jOGY4YWU2OWYzNjciIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PHBvbHlnb24gcG9pbnRzPSIxMC42MSA5LjE5IDEuNDEgMCAwIDEuNDEgOS4xOSAxMC42MSAwIDE5LjggMS40MSAyMS4yMSAxMi4wMiAxMC42MSAxMC42MSA5LjE5IiBzdHlsZT0iZmlsbDojZmZmO2ZpbGwtcnVsZTpldmVub2RkIi8+PC9nPjwvZz48L3N2Zz4=);
+    background-position: 50% 50%;
+    background-size: 13px 23px;
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.btn-link-arrow:hover {
+    background-color:  #666666;
+    color: #666666;
+}
+
+.rules {
+    padding-bottom: 30px;
+}
 
 /* GALLERI */
