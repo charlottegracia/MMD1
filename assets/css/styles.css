@@ -230,6 +230,12 @@ footer a {
     padding: 0 170px 0 140px;
 }
 
+/* FÆLLES STYLING FOR ALLE SIDER */
+.redUnderline {
+    text-decoration: underline solid 3px #96192b;
+    text-underline-position: under;
+}
+
 /* MENU OG SELSKABER */
 
     /* Menu */
@@ -279,6 +285,45 @@ footer a {
     
 
 /* OM OS */
+
+/* Om os grid areas */
+.omOsText1  {grid-area: omOsText1;}
+.omOsPic1   {grid-area: omOsPic1;}
+.omOsPic2   {grid-area: omOsPic2;}
+.omOsText2  {grid-area: omOsText2;}
+
+.omOsGrid {
+    padding: 50px 140px 100px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 5%;
+    color: #000000;
+    grid-template-areas: 
+    "omOsText1 omOsPic1"
+    "omOsPic2 omOsText2"
+}
+
+.omOsText {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.omOsTitle {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.omOsPic {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.omOsPic1 {background-image: url("/assets/image/OmOsSnow.jpg");}
+.omOsPic2 {background-image: url("/assets/image/omOsMest.jpg");}
 
 
 /* KONTAKT OS */
