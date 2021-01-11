@@ -70,6 +70,43 @@ main nav {
     background-color: #191c27;
 }
 
+.burgerikon {font-size: 0;} 
+
+/* media query for header */
+@media screen and (max-width: 812px) {
+    header nav {
+        display: none;
+    }
+
+    .burgerikon {
+        font-size: 22px;
+        padding: 20px;
+        float: right;
+    }
+
+    .logo {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 813px) and (max-width: 1024px) {
+    header nav {
+        display: none;
+    }
+
+    .burgerikon {
+        font-size: 22px;
+        padding: 20px;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    .tabletNav {
+        display: none;
+    }    
+}
+
 /* FÆLLES STYLING FOR HERO */
 .hero {
     margin: 0;
@@ -97,17 +134,40 @@ main nav {
 
 /* BACKGROUND-IMAGES TIL HERO */ 
 /* forside, om os, kontakt os, galleri */
-.forside, .omOs, .kontakt, .galleri {
+.forside {background-image: url("../image/vinter2.png");}
+
+.omOs, .kontakt, .galleri {
     background-image: url("../image/blomsterWeb.jpg");
 }
 
 /* årstider og selskaber */
 .foraar         {background-image: url("../image/menu.png");}
-.sommer         {background-image: url("../image/menu.png")}
-.efteraar       {background-image: url("../image/menu.png")}
-.vinter         {background-image: url("../image/menu.png")}
+.sommer         {background-image: url("../image/blomsterWeb.jpg")}
+.efteraar       {background-image: url("../image/efteraar.png")}
+.vinter         {background-image: url("../image/OmOsSnow.jpg")}
 .bryllup        {background-image: url("../image/selskab_headers.jpg");}
 .konfirmation   {background-image: url("../image/selskab_headers.jpg");}
+
+@media screen and (max-width: 812px) {
+    .hero {
+        height: 25vh;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        width: 80vw;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 813px) and (max-width: 1024px) {
+    .hero {
+        height: 25vh;
+    }
+}
 
 /* FORSIDE */
 .forsideGrid h2 {
@@ -167,6 +227,79 @@ main nav {
     "box5 box6 box7 box8";
 }
 
+@media screen and (max-width: 812px) {
+    .box3 {background-color: #191c27;}
+    .box4 {background-color: #5e5e5e;}
+    .forsideGrid {
+        margin: 4px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "box1 box2" 
+        "box3 box4"
+        "box5 box6"
+        "box8 box7";
+    }
+
+    .forsideGrid h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .forsideGrid a {
+        margin: 4px;
+        padding: 50px 0;
+    }
+}
+
+@media screen and (min-width: 813px) and (max-width: 1024px) {
+    .forsideGrid {
+        margin: 4px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "box1 box2 box3 box4"
+        "box5 box6 box7 box8";
+    }
+
+    .forsideGrid h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+    }
+
+    .forsideGrid a {
+        margin: 4px;
+        padding: 50px 0;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    .forsideGrid {
+        margin: 7.5px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "box1 box2 box3 box4"
+        "box5 box6 box7 box8";
+    }
+
+    .forsideGrid h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 28px;
+    }
+
+    .forsideGrid a {
+        margin: 7.5px;
+        padding: 50px 0;
+    }
+}
+
 /* FOOTER */
 /* grid areas for footer */
 .footerAddress  {grid-area: address;}
@@ -222,12 +355,53 @@ footer a {
 }
 
 .cookie {
+    height: 30px;
     background-color: #96192b;
     text-align: center;
+    margin: 0;
 }
 
 .cookie a {
     padding: 0 170px 0 140px;
+}
+
+@media screen and (max-width: 812px) {
+    footer {
+        display: grid;
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-rows: 140px 180px 200px 20px;
+        grid-template-areas: 
+        "address address address"
+        ". tlf ."
+        ". social ."
+        "cookie cookie cookie";
+    }
+
+    .cookie a {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 813px) and (max-width: 1024px) {
+    footer {
+        display: grid;
+        grid-template-columns: 0.9fr 1fr 1.1fr;
+        grid-template-rows: 1fr 20px;
+        grid-template-areas: 
+        "address tlf social"
+        "cookie cookie cookie";
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr 1fr;
+        grid-template-rows: 1fr 20px;
+        grid-template-areas: 
+        "address . tlf social"
+        "cookie cookie cookie cookie";
+    }
 }
 
 /* FÆLLES STYLING FOR ALLE SIDER */
@@ -255,15 +429,23 @@ footer a {
     text-align: center;
 }
 
-.maaneder, .vaelgMellem {
+.hvidBox li {
+    text-align: left;
+    margin: 30px;
+}
+
+.maaneder, .vaelgMellem, .selskabGrey, .selskabRing {
     color: #666666;
     font-weight: normal;
 }
 
 .selskabGrey {
-    color: #666666;
-    font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.selskabRing {
+    font-size: 18px;
+    padding-top: 10px;
 }
 
 .pris {
