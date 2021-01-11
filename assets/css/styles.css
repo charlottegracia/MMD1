@@ -148,6 +148,7 @@ main nav {
 .bryllup        {background-image: url("../image/selskab_headers.jpg");}
 .konfirmation   {background-image: url("../image/selskab_headers.jpg");}
 
+
 @media screen and (max-width: 812px) {
     .hero {
         height: 25vh;
