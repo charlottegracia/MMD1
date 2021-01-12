@@ -87,6 +87,27 @@ main nav {
     .logo {
         width: 250px;
     }
+
+    main nav {
+        width: 100%;
+        background-color: #191c27;
+        text-align: center;
+        float: center;
+    }
+
+    main nav ul {
+        padding: 0;
+    }
+
+    main nav ul li {
+        margin: 0;
+        padding: 0 9px;
+        font-size: 20px;
+    }
+    
+    .bottomNav {
+        border-bottom: 2px solid #666666;
+    }
 }
 
 @media screen and (min-width: 813px) and (max-width: 1024px) {
@@ -101,7 +122,7 @@ main nav {
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1200px){
+@media screen and (min-width: 1025px) and (max-width: 1200px){
     .tabletNav {
         display: none;
     }    
@@ -116,7 +137,7 @@ main nav {
     background-position: center; 
     text-align: center;
     padding-top: 75px;
-    text-shadow: 6px 6px 8px #000000;
+    text-shadow: 0px 0px 8px #000000;
 }
 
 .hero h1 {
@@ -155,12 +176,26 @@ main nav {
     }
 
     .hero h1 {
-        font-size: 35px;
+        font-size: 33px;
     }
 
     .hero p {
         width: 80vw;
         font-size: 18px;
+    }
+
+    .foraar, .sommer, .efteraar, .vinter {
+        height: 40vh;
+        max-height: 35vh;
+        padding-top: 70px;
+    }
+
+    .foraar {
+        background-size: 160%;
+    }
+
+    .foraar h1, .sommer h1, .efteraar h1, .vinter h1 {
+        font-size: 40px;
     }
 }
 
@@ -168,6 +203,7 @@ main nav {
     .hero {
         height: 25vh;
     }
+    
 }
 
 /* FORSIDE */
@@ -460,6 +496,55 @@ footer a {
     margin: 30px 100px;
 }
 
+.hvidBox h4 {
+    text-align: left;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 812px) {
+    .hvidBox {
+        margin: 5%;
+        padding: 5% 0;
+        width: 90%;
+    }
+
+    .hvidBox article {
+        margin: 2%;
+    }
+
+    .pris, .maaneder {
+        font-size: 19px;
+        border-bottom: none;
+    }
+
+    .hvidBox li {
+        text-align: left;
+        margin: 20px 30px 20px 10px;
+    }
+}
+
+@media screen and (min-width: 813px) and (max-width: 1200px) {
+    .hvidBox {
+        margin: 5% 15%;
+        padding: 5% 0;
+        width: 70%;
+    }
+
+    .hvidBox article {
+        margin: 2%;
+    }
+
+    .pris, .maaneder {
+        font-size: 19px;
+        border-bottom: none;
+    }
+
+    .hvidBox ul {
+        text-align: left;
+        margin: 20px 10% 20px 5%;
+    }
+}
+
 /* OM OS */
 /* Om os grid areas */
 .omOsText1  {grid-area: omOsText1;}
@@ -491,18 +576,57 @@ footer a {
     font-size: 22px;
 }
 
-.omOsPic {
-    margin: 0;
-    padding: 0;
-    background-size: cover;
+.omOsGrid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.omOsPic1 {background-image: url("../image/OmOsSnow.jpg");}
-.omOsPic2 {background-image: url("../image/omOsMest.jpg");}
+@media screen and (max-width: 812px) {
+    .omOsGrid {
+        margin: 0 20px 20px 20px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 0.5fr 1fr 0.5fr;
+        grid-gap: 0%;
+        grid-template-areas: 
+        "omOsText1"
+        "omOsPic1"
+        "omOsText2"
+        "omOsPic2";
+    }
+
+    .blueBar {
+        display: none;
+    }
+
+    .omOsTitle {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 813px) and (max-width: 1200px) {
+    .omOsGrid {
+        margin: 0;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        grid-gap: 50px;
+        grid-template-areas: 
+        "omOsText1 omOsPic1"
+        "omOsPic2 omOsText2"
+    }
+
+    .blueBar {
+        display: none;
+    }
+}
 
 /* KONTAKT OS */
 .kontakt-description    { grid-area: kontakt; }
-.map                    { grid-area: map; }
+.kontaktoplysninger img { grid-area: map; }
 .form                   { grid-area: form; }
 .rules                  { grid-area: rules;}
 
@@ -523,9 +647,10 @@ footer a {
     width: auto;
 }
 
-.map {
-    background-image: url("../image/map.png");
-    background-size: cover;
+.kontaktoplysninger img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .mapouter {
@@ -585,6 +710,48 @@ input[type=text], input[type=number], select, textarea {
     padding-bottom: 15px;
 }
 
+@media screen and (max-width: 812px) {
+    .kontaktoplysninger {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.3fr 1fr 0.5fr;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "kontakt"
+        "map"
+        "rules"
+        "form";
+    }
+
+    .form {
+        margin: auto;
+    }
+
+    .takeaway {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 813px) and (max-width: 1200px) {
+    .kontaktoplysninger {
+        margin: 0;
+        padding: 30px 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.5fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "kontakt kontakt"
+        "map map"
+        "rules form";
+    }
+
+    .form {
+        margin: 0 auto;
+    }
+}
+
 /* GALLERI */
 /* grid areas til galleri */
 .img1   {grid-area: img1;}
@@ -620,4 +787,34 @@ input[type=text], input[type=number], select, textarea {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 812px) {
+    .billedgalleri {
+        display: grid;
+        grid-template-columns: 5% 1fr 1fr 5%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+        ". img1 img2 ."
+        ". img3 img4 ."
+        ". img5 img6 ."
+        ". img7 img8 ."
+        ". img9 img10 ."
+        ". img11 img12 .";
+    }
+}
+
+@media screen and (min-width: 813px) and (max-width: 1200px) {
+    .billedgalleri {
+        display: grid;
+        grid-template-columns: 7% 1fr 1fr 1fr 7%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+        ". img1 img2 img3 ."
+        ". img4 img5 img6 ."
+        ". img7 img8 img9 ."
+        ". img10 img11 img12 .";
+    }
 }
