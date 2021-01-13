@@ -265,8 +265,11 @@ main nav {
 }
 
 @media screen and (max-width: 812px) {
-    .box3 {background-color: #191c27;}
-    .box4 {background-color: #5e5e5e;}
+    .box3       {background-color: #191c27;}
+    .box3:hover {background-color: #1d2132;}
+    .box4       {background-color: #666666;}
+    .box4:hover {background-color: #5e5e5e;}
+
     .forsideGrid {
         margin: 4px;
         display: grid;
