@@ -561,7 +561,7 @@ footer a {
     color: #000000;
     grid-template-areas: 
     "omOsText1 omOsPic1"
-    "omOsPic2 omOsText2"
+    "omOsText2 omOsPic2"
 }
 
 .omOsText {
@@ -616,7 +616,7 @@ footer a {
         grid-gap: 50px;
         grid-template-areas: 
         "omOsText1 omOsPic1"
-        "omOsPic2 omOsText2"
+        "omOsText2 omOsPic2"
     }
 
     .blueBar {
