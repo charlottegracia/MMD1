@@ -561,7 +561,7 @@ footer a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     grid-gap: 5%;
-    color: #000000;
+    color: #191c27;
     grid-template-areas: 
     "omOsText1 omOsPic1"
     "omOsText2 omOsPic2"
