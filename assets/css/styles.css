@@ -702,7 +702,6 @@ input[type=text], input[type=number], select, textarea {
 
 .btn-link-arrow:hover {
     background-color:  #666666;
-    color: #666666;
 }
 
 .rules {
