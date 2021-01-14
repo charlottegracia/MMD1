@@ -635,7 +635,7 @@ footer a {
 
 .kontaktoplysninger {
     padding: 50px 140px 100px 140px;
-    color: #1d2132;
+    color: #191c27;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 0.2fr 0.5fr 1fr;
