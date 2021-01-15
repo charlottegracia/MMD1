@@ -488,6 +488,14 @@ footer a {
     padding-top: 10px;
 }
 
+.menuoverskrift {
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 .pris {
     font-size: 22px;
     font-weight: normal;
@@ -497,11 +505,6 @@ footer a {
 
 .hvidBox article {
     margin: 30px 100px;
-}
-
-.hvidBox h4 {
-    text-align: left;
-    font-size: 17px;
 }
 
 @media screen and (max-width: 812px) {
@@ -661,7 +664,7 @@ footer a {
     margin-right: auto;
 }
 
-input[type=text], input[type=number], select, textarea {
+input[type=text], input[type=number], textarea {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
     padding: 12px;
