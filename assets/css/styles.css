@@ -232,7 +232,7 @@ main nav {
 .darkblue   { background-color: #191c27;}
 .grey       { background-color: #666666;}
 .billede1   { background-image: url("../image/forsideBillede1.jpg");}
-.billede2   { background-image: url("../image/efteraar.jpg");}
+.billede2   { background-image: url("../image/efteraargalleri.jpg");}
 
 .billede1, .billede2 {
     background-repeat: no-repeat;
