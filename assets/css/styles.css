@@ -155,17 +155,17 @@ main nav {
 
 /* BACKGROUND-IMAGES TIL HERO */ 
 /* forside, om os, kontakt os, galleri */
-.forside {background-image: url("../image/vinter2.png");}
+.forside {background-image: url("../image/vinter.jpg");}
 
 .omOs, .kontakt, .galleri {
     background-image: url("../image/blomsterWeb.jpg");
 }
 
 /* årstider og selskaber */
-.foraar         {background-image: url("../image/menu.png");}
+.foraar         {background-image: url("../image/foraar.jpg");}
 .sommer         {background-image: url("../image/blomsterWeb.jpg")}
-.efteraar       {background-image: url("../image/efteraar.png")}
-.vinter         {background-image: url("../image/OmOsSnow.jpg")}
+.efteraar       {background-image: url("../image/efteraar.jpg")}
+.vinter         {background-image: url("../image/vinter.jpg")}
 .bryllup        {background-image: url("../image/selskab_headers.jpg");}
 .konfirmation   {background-image: url("../image/selskab_headers.jpg");}
 
@@ -231,8 +231,8 @@ main nav {
 .red        { background-color: #96192b;}
 .darkblue   { background-color: #191c27;}
 .grey       { background-color: #666666;}
-.billede1   { background-image: url("../image/forsideBillede1.png");}
-.billede2   { background-image: url("../image/forsideBillede2.png");}
+.billede1   { background-image: url("../image/forsideBillede1.jpg");}
+.billede2   { background-image: url("../image/efteraar.jpg");}
 
 .billede1, .billede2 {
     background-repeat: no-repeat;
@@ -452,7 +452,7 @@ footer a {
 
 /* MENU OG SELSKABER */
 .baggrund {
-    background-image: url("../image/Lunde-Wedding-19052018-627.jpg");
+    background-image: url("../image/menubaggrund.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
